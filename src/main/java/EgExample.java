@@ -11,6 +11,7 @@ public class EgExample {
     }
 
     @Eg(given = {"\"World\""}, returns = "\"Hello, World!\"")
+    @Eg(given = {"\"Earth\""}, returns = "\"Hello, Earth!\"")
     public static String greet(String target) {
         return "Hello, "+target+"!";
     }
