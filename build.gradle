@@ -1,0 +1,29 @@
+plugins {
+    id "net.ltgt.apt" version "0.9"  // Annotation processing for non-Android projects
+}
+
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    apt     'com.vocalabs:egtest-processor:0.1'   // change apt to annotationProcessor if compiling for Android
+    compile 'com.vocalabs:egtest-annotations:0.1'
+    testCompile 'junit:junit:4.12'
+}
+
+compileJava.options.compilerArgs.add("-Aegtest.targetDirectory=$buildDir/generated/egTest") // Specify output directory
+
+// Uncomment if your Java compiles alongside Scala. Sadly, this won't let you use EgTest within Scala source code.
+// compileScala.options.compilerArgs.add("-Aegtest.targetDirectory=$buildDir/generated/egTest")
+
+sourceSets {
+    test {
+        java {
+            srcDir 'build/generated/egTest'  // Generate tests using output directory specified above
+        }
+    }
+}

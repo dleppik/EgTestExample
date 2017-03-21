@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/egtestexample.iml" filepath="$PROJECT_DIR$/.idea/modules/egtestexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/egtestexample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/egtestexample_main.iml" group="egtestexample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/egtestexample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/egtestexample_test.iml" group="egtestexample" />
+    </modules>
+  </component>
+</project>
