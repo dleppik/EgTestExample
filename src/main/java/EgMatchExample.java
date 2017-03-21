@@ -9,20 +9,20 @@ public class EgMatchExample {
      * Regular expression to match address portions of typical real-world email addresses.
      * It does NOT attempt to match all valid RFC 2822 addresses.
      */
-    @EgMatch("dleppik@vocalabs.com")
-    @EgMatch("dleppik@vocalabs.example.com")
-    @EgNoMatch("dleppik")
-    @EgNoMatch("dleppik@vocalabs@example.com")
-    @EgNoMatch("David Leppik <dleppik@vocalabs.com>")
+    @EgMatch("someone@example.com")
+    @EgMatch("sone@example.example.com")
+    @EgNoMatch("sone")
+    @EgNoMatch("sone@example@example.com")
+    @EgNoMatch("Some One <sone@example.com>")
     public static final Pattern
             SIMPLE_EMAIL_RE = Pattern.compile("^[\\w+.\\-=&|/?!#$*]+@[\\w.\\-]+\\.[\\w]+$");
 
     /** Method wrapper for {@link EgMatchExample#SIMPLE_EMAIL_RE}. */
-    @EgMatch("dleppik@vocalabs.com")
-    @EgMatch("dleppik@vocalabs.example.com")
-    @EgNoMatch("dleppik")
-    @EgNoMatch("dleppik@vocalabs@example.com")
-    @EgNoMatch("David Leppik <dleppik@vocalabs.com>")
+    @EgMatch("sone@example.com")
+    @EgMatch("sone@example.example.com")
+    @EgNoMatch("sone")
+    @EgNoMatch("sone@example@example.com")
+    @EgNoMatch("Some One <sone@example.com>")
     public static boolean isEmail(String email) { return SIMPLE_EMAIL_RE.matcher(email).matches(); }
 
 
