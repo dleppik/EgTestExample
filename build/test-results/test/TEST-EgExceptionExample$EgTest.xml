@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EgExceptionExample$EgTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-03-20T22:01:58" hostname="Abyayas-MacBook-Pro.local" time="0.001">
-  <properties/>
-  <testcase name="testException$methodWhichCannotHandleNulls" classname="EgExceptionExample$EgTest" time="0.001"/>
-  <testcase name="testException$anotherMethodWhichCannotHandleNulls" classname="EgExceptionExample$EgTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
