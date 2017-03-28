@@ -68,26 +68,6 @@ public class EgExample {
         return a - decrementStep;
     }
 
-    @Eg(given = {"1"}, returns = "1")
-    @Eg(given = {"5"}, returns = "120")
-    @Eg(given = {"0"}, returns = "1")
-    private static int factorialPrivate(int x) {
-        int result = 1;
-        if (x == 0) {
-            return result;
-        }
-        for (int i = result; i <= x; i++) {
-            result = result * i;
-        }
-        return result;
-    }
-
-    @Eg(given = {"3.0"}, returns = "6.0", delta = 0.0d)
-    private static double doubleTheDouble(double x) {
-        x *= 2;
-        return x;
-    }
-
     @Eg(given = {}, returns = "\"\"")
     public String whatShouldWeNameOurMethodIAmSoConfusedddddddWillThisWorkIHopeItDoesWaitYouWantItEvenLongerrrrrrrrrrrrrrrrrrrr() {
         return "";
@@ -108,30 +88,6 @@ public class EgExample {
                                  int vv, int ww, int xx, int yy, int zz) {
         return zz - a;
     }
-
-    @Eg(given = {"1"}, returns = "(new int [] {1, 1, 1, 1})")
-    public int[] checkIntArrays(int x) {
-        int[] arr = new int[4];
-        for (int i = 0; i < 4; i++) {
-            arr[i] = x;
-        }
-        return arr;
-    }
-
-    @Eg(given = {"\"a\""}, returns = "new String [] {\"a\", \"a\", \"a\", \"a\"}")
-    public String[] CheckStringArrays(String x) {
-        String[] arr = new String[4];
-        for (int i = 0; i < 4; i++) {
-            arr[i] = x;
-        }
-        return arr;
-    }
-    /*
-    @Eg
-    public Integer CheckIntWrapper(int x){
-        return new Integer(x);
-    }*/
-
 }
 
 
