@@ -17,6 +17,9 @@ dependencies {
 
 compileJava.options.compilerArgs.add("-Aegtest.targetDirectory=$buildDir/generated/egTest") // Specify output directory
 
+// Uncomment if you want to write your examples in Groovy
+// compileJava.options.compilerArgs.add("-Aegtest.targetLanguage=GROOVY")
+
 // Uncomment if your Java compiles alongside Scala. Sadly, this won't let you use EgTest within Scala source code.
 // compileScala.options.compilerArgs.add("-Aegtest.targetDirectory=$buildDir/generated/egTest")
 
