@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    apt     'com.vocalabs:egtest-processor:0.2.0'   // change apt to annotationProcessor if compiling for Android
-    compileOnly 'com.vocalabs:egtest-annotations:0.2.0'
+    apt     'com.vocalabs:egtest-processor:0.3.0'   // change apt to annotationProcessor if compiling for Android
+    compileOnly 'com.vocalabs:egtest-annotations:0.3.0'
     testCompile 'junit:junit:4.12'
 }
 
